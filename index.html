@@ -8,25 +8,50 @@
     <script src="./js/clock.js" defer></script>
     <script src="./js/quotes.js" defer></script>
     <script src="./js/background.js" defer></script>
+    <script src="./js/todo.js" defer></script>
+    <script src="./js/weather.js" defer></script>
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
     <!-- 시계 -->
-    <h2 id="clock"></h2>
+    <h1 id="clock"></h1>
 
     <!-- 이름 입력 폼 -->
     <form class="hidden" id="login-form">
-      <input required maxlength="15" type="text" placeholder="이름이 뭐에요?" />
-      <button type="submit">로그인</button>
+      <input
+        required
+        maxlength="15"
+        type="text"
+        placeholder="이름을 입력하세요 ☺️"
+      />
+      <button type="submit">Click!</button>
     </form>
 
     <!-- hello 이름 -->
     <h1 id="greeting" class="hidden"></h1>
 
+    <!-- todo -->
+    <form id="todo-form">
+      <input type="text" placeholder="to do를 입력하세요!" required />
+    </form>
+
+    <ul id="todo-list">
+      <!-- <li>
+        todo
+        button
+      </li> -->
+    </ul>
+
+    <!-- 랜덤 명언 -->
     <div id="quote">
       <span></span>
       <br />
       <span></span>
     </div>
+
+    <!-- 날씨 -->
+    <div id="weather"></div>
+
+    <!-- 랜덤 배경 -->
   </body>
 </html>
