@@ -1,3 +1,116 @@
+body {
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 .hidden {
   display: none;
+}
+
+/* 시계 */
+#clock {
+  color: #d3cccc;
+  font-size: 8rem;
+  font-weight: bold;
+  margin: 20px;
+  margin-bottom: 10px;
+  text-shadow: black 5px 5px 5px;
+}
+
+/* 이름 입력 폼 */
+#login-form {
+  background-color: #d3cccc;
+  border-radius: 50px;
+  padding: 10px;
+}
+#login-form > input {
+  border: none;
+  font-size: 20px;
+  background-color: #d3cccc00;
+}
+#login-form > input:focus {
+  outline: none;
+}
+#login-form > button {
+  border-radius: 50px;
+  background-color: #d3cccc00;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+/* greeting */
+#greeting {
+  color: #d3cccc;
+  font-size: 50px;
+  font-weight: bold;
+  font-family: 'Courier New', Courier, monospace;
+  text-shadow: 0px 0px 10px rgba(28, 28, 28, 0.59);
+}
+
+/* todo 폼 */
+#todo-form {
+  margin-top: 20px;
+  background-color: #d3cccc;
+  border-radius: 50px;
+}
+#todo-form > input {
+  border: none;
+  font-size: 17px;
+  background-color: #d3cccc00;
+}
+#todo-form > input:focus {
+  outline: none;
+}
+
+/* todo 리스트 */
+#todo-list {
+  display: flex;
+}
+#todo-list > li {
+  color: #e7e3e3;
+  background-color: #63626276;
+  padding: 3px;
+  border-radius: 50px;
+  margin-right: 7px;
+}
+#todo-list > li > button {
+  background-color: #d3cccc;
+  border-radius: 50px;
+  cursor: pointer;
+}
+#todo-list {
+  list-style: none;
+}
+
+/* 랜덤 명언 */
+#quote {
+  color: #cecdcd;
+  background-color: #1313135b;
+  box-shadow: -1px 0px 8px 1px;
+  border-radius: 7px;
+  padding: 5px 10px;
+  position: fixed;
+  bottom: 30px;
+}
+
+/* 날씨 */
+#weather {
+  color: #d3cccc;
+  text-shadow: black 3px 1px 2px;
+  font-size: 17px;
+  margin-bottom: 40px;
+}
+
+/* 배경 미디어 쿼리 */
+@media (max-width: 1600px) {
+  body {
+    background-position: center;
+  }
 }
