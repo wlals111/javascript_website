@@ -16,3 +16,8 @@
 - HTML, CSS
 - javascript
 - [openweather API](https://openweathermap.org/)
+
+## 수정할 점
+
+배포하고 보니 모바일에서 봤을 때를 고려하지 않았습니다.
+모바일용으로 다시 배포 예정
