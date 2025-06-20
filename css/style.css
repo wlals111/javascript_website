@@ -122,6 +122,7 @@ body {
   }
 }
 
+/* 모바일 */
 @media (max-width: 500px) {
   #clock {
     font-size: 5rem;
